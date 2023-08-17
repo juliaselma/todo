@@ -1,4 +1,4 @@
-package org.salesforce.utils;
+package org.utils;
 import org.testng.annotations.DataProvider;
 
 public class TaskDataProvider {

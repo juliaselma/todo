@@ -1,5 +1,5 @@
-package org.salesforce.tests;
-import org.salesforce.utils.TaskDataProvider;
+package org.tests;
+import org.utils.TaskDataProvider;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -67,7 +67,6 @@ public class TodoAppTest extends BaseTests{
         todoPage.addMultipleTasks(task,task1,task2,task3);
         todoPage.toggleAllTasksCompletion();
         todoPage.toggleAllTasksCompletion();
-
 
         Assert.assertTrue(todoPage.areAllTasksActive());
     }
