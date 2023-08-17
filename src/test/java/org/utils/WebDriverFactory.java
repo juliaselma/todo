@@ -9,7 +9,7 @@ import java.util.concurrent.TimeUnit;
 
 public class WebDriverFactory {
     public static WebDriver createInstance(String browserName) {
-        WebDriver driver = null;
+        WebDriver driver;
 
         if (browserName.equalsIgnoreCase("chrome")) {
             WebDriverManager.chromedriver().setup();

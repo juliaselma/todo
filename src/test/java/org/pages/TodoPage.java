@@ -5,11 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 
-import java.sql.SQLOutput;
 import java.util.List;
 
 public class TodoPage {
-    private WebDriver driver;
+    private final WebDriver driver;
 
     public TodoPage(WebDriver driver) {
         this.driver = driver;
@@ -34,7 +33,7 @@ public class TodoPage {
         addTask(taskName4);
     }
 
-    public boolean IsItemsCountVerificated(){
+    public boolean IsItemsCountValidated(){
         WebElement itemCountElement =  driver.findElement(By.cssSelector("#todo-count strong"));
         String itemCountText = itemCountElement.getText();
         int expectedItemCount = 4;
@@ -72,8 +71,10 @@ public class TodoPage {
         String expectedCompletedTasks = "4";
         List<WebElement> taskList = driver.findElements(By.cssSelector("#todo-list>li"));
         for(WebElement task : taskList){
-            task.getAttribute("class").contains("completed");
-            counter++;
+            if(task.getAttribute("class").contains("completed")){
+                counter++;
+            }
+
         }
         return expectedCompletedTasks.equals(Integer.toString(counter));
     }
@@ -83,8 +84,9 @@ public class TodoPage {
         String expectedCompletedTasks = "4";
         List<WebElement> taskList = driver.findElements(By.cssSelector("#todo-list>li"));
         for(WebElement task : taskList){
-            task.getAttribute("class").contains("active");
-            counter++;
+            if(task.getAttribute("class").contains("active")){
+                counter++;
+            }
         }
         return expectedCompletedTasks.equals(Integer.toString(counter));
     }

@@ -1,11 +1,11 @@
 package org.tests;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.pages.TodoPage;
+import org.utils.ConfigReader;
 import org.utils.WebDriverFactory;
 
 public class BaseTests {
@@ -15,11 +15,11 @@ public class BaseTests {
     @BeforeMethod
     public void setUp() {
 
-        String browserName = "firefox";
+        String browserName = ConfigReader.getProperty("browser");
         driver = WebDriverFactory.createInstance(browserName);
 
         todoPage = new TodoPage(driver);
-        todoPage.navigateTo("https://todomvc4tasj.herokuapp.com/");
+        todoPage.navigateTo(ConfigReader.getProperty("baseUrl"));
     }
 
     @AfterMethod

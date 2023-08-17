@@ -16,7 +16,7 @@ public class TodoAppTest extends BaseTests{
     @Test (dataProvider = "TasksData",dataProviderClass = TaskDataProvider.class)
     public void testMultipleTasksAdded(String task,String task1,String task2,String task3)throws InterruptedException{
         todoPage.addMultipleTasks(task,task1,task2,task3);
-        Assert.assertTrue(todoPage.IsItemsCountVerificated());
+        Assert.assertTrue(todoPage.IsItemsCountValidated());
     }
 
     @Test (dataProvider = "TaskData",dataProviderClass = TaskDataProvider.class)
