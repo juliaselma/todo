@@ -14,13 +14,13 @@ public class BaseTests {
     protected TodoPage todoPage;
 
     @BeforeMethod
-    @Parameters({"browser"})
-    public void setUp(@Optional("chrome") String browser) {
+    @Parameters({"browser","URL"})
+    public void setUp(@Optional("chrome") String browser,@Optional("https://todomvc4tasj.herokuapp.com/")String URL) {
 
         driver = WebDriverFactory.createInstance(browser);
 
         todoPage = new TodoPage(driver);
-        todoPage.navigateTo("https://todomvc4tasj.herokuapp.com/");
+        todoPage.navigateTo(URL);
     }
 
     @AfterMethod

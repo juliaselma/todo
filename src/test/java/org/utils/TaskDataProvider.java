@@ -12,7 +12,7 @@ public class TaskDataProvider {
     @DataProvider(name = "TaskData")
     public static Object[][] getTask() {
         return new Object[][]{
-                {"Call mum"},
+                {"Buy apples"},
         };
     }
 }
