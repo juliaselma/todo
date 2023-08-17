@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="AllTestsFirefox">
+    <parameter name="URL" value="https://todomvc4tasj.herokuapp.com/"/>
+    <listeners>
+        <listener class-name="org.utils.CustomTestListener"/>
+    </listeners>
+    <test name="FirefoxTest">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="org.tests.TodoAppTest"/>
+        </classes>
+    </test>
+</suite>

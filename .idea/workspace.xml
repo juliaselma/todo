@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f20e9a2-e045-4430-9f6a-0af93d7692c9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/pages/TodoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/pages/TodoPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/tests/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/tests/BaseTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/tests/TodoAppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/tests/TodoAppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/utils/WebDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/utils/WebDriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/allTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/allTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/utils/ConfigReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/allTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/AllTestsChrome.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,10 +40,20 @@
       <recent name="org.salesforce.pages" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/Usuario/Documents/SpriteCloud/todo/src/test/resources/allTests.xml">
-    <configuration name="C:/Users/Usuario/Documents/SpriteCloud/todo/src/test/resources/allTests.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.C:/Users/Usuario/Documents/SpriteCloud/todo/src/test/resources/ParallelTestSuite.xml">
+    <configuration name="C:/Users/Usuario/Documents/SpriteCloud/todo/src/test/resources/AllTestsChrome.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="todo" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/allTests.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/AllTestsChrome.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/Usuario/Documents/SpriteCloud/todo/src/test/resources/ParallelTestSuite.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="todo" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/ParallelTestSuite.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -69,7 +78,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TodoAppTest.testFilterActive" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TodoAppTest.testSetAllTasksAsActive" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="todo" />
       <extension name="coverage">
         <pattern>
@@ -79,7 +88,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.tests" />
       <option name="MAIN_CLASS_NAME" value="org.tests.TodoAppTest" />
-      <option name="METHOD_NAME" value="testFilterActive" />
+      <option name="METHOD_NAME" value="testSetAllTasksAsActive" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -87,7 +96,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TodoAppTest.testFilterCompleted" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TodoAppTest.testSetTaskAsActive" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="todo" />
       <extension name="coverage">
         <pattern>
@@ -97,25 +106,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.tests" />
       <option name="MAIN_CLASS_NAME" value="org.tests.TodoAppTest" />
-      <option name="METHOD_NAME" value="testFilterCompleted" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TodoAppTest.testTaskAdded" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="todo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.tests" />
-      <option name="MAIN_CLASS_NAME" value="org.tests.TodoAppTest" />
-      <option name="METHOD_NAME" value="testTaskAdded" />
+      <option name="METHOD_NAME" value="testSetTaskAsActive" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -125,11 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/Usuario/Documents/SpriteCloud/todo/src/test/resources/allTests.xml" />
-        <item itemvalue="TestNG.TodoAppTest.testTaskAdded" />
-        <item itemvalue="TestNG.TodoAppTest.testFilterCompleted" />
-        <item itemvalue="TestNG.TodoAppTest.testFilterActive" />
+        <item itemvalue="TestNG.C:/Users/Usuario/Documents/SpriteCloud/todo/src/test/resources/ParallelTestSuite.xml" />
+        <item itemvalue="TestNG.C:/Users/Usuario/Documents/SpriteCloud/todo/src/test/resources/AllTestsChrome.xml" />
         <item itemvalue="TestNG.TodoAppTest" />
+        <item itemvalue="TestNG.TodoAppTest.testSetTaskAsActive" />
+        <item itemvalue="TestNG.TodoAppTest.testSetAllTasksAsActive" />
       </list>
     </recent_temporary>
   </component>

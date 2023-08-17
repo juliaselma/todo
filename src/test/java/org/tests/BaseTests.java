@@ -5,7 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.pages.TodoPage;
-import org.utils.ConfigReader;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 import org.utils.WebDriverFactory;
 
 public class BaseTests {
@@ -13,13 +14,13 @@ public class BaseTests {
     protected TodoPage todoPage;
 
     @BeforeMethod
-    public void setUp() {
+    @Parameters({"browser"})
+    public void setUp(@Optional("chrome") String browser) {
 
-        String browserName = ConfigReader.getProperty("browser");
-        driver = WebDriverFactory.createInstance(browserName);
+        driver = WebDriverFactory.createInstance(browser);
 
         todoPage = new TodoPage(driver);
-        todoPage.navigateTo(ConfigReader.getProperty("baseUrl"));
+        todoPage.navigateTo("https://todomvc4tasj.herokuapp.com/");
     }
 
     @AfterMethod
