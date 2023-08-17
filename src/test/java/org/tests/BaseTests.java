@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.pages.TodoPage;
+import org.utils.WebDriverFactory;
 
 public class BaseTests {
     private WebDriver driver;
@@ -13,9 +14,10 @@ public class BaseTests {
 
     @BeforeMethod
     public void setUp() {
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
+
+        String browserName = "firefox";
+        driver = WebDriverFactory.createInstance(browserName);
+
         todoPage = new TodoPage(driver);
         todoPage.navigateTo("https://todomvc4tasj.herokuapp.com/");
     }

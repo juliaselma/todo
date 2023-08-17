@@ -5,15 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f20e9a2-e045-4430-9f6a-0af93d7692c9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/salesforce/pages/TodoPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/pages/TodoPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/salesforce/tests/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/tests/BaseTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/salesforce/tests/TodoAppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/tests/TodoAppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/salesforce/utils/TaskDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/utils/TaskDataProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/tests/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/tests/BaseTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
