@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="allTests">
+    <listeners>
+        <listener class-name="org.utils.CustomTestListener"/>
+    </listeners>
     <test name="Todo tests">
         <classes>
             <class name="org.tests.TodoAppTest"/>

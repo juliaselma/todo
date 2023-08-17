@@ -11,6 +11,7 @@
       <change beforePath="$PROJECT_DIR$/src/test/java/org/tests/BaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/tests/BaseTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/tests/TodoAppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/tests/TodoAppTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/utils/WebDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/utils/WebDriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/allTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/allTests.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +41,7 @@
       <recent name="org.salesforce.pages" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.TodoAppTest.testTaskAdded">
+  <component name="RunManager" selected="TestNG.C:/Users/Usuario/Documents/SpriteCloud/todo/src/test/resources/allTests.xml">
     <configuration name="C:/Users/Usuario/Documents/SpriteCloud/todo/src/test/resources/allTests.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="todo" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/allTests.xml" />
@@ -124,8 +125,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TodoAppTest.testTaskAdded" />
         <item itemvalue="TestNG.C:/Users/Usuario/Documents/SpriteCloud/todo/src/test/resources/allTests.xml" />
+        <item itemvalue="TestNG.TodoAppTest.testTaskAdded" />
         <item itemvalue="TestNG.TodoAppTest.testFilterCompleted" />
         <item itemvalue="TestNG.TodoAppTest.testFilterActive" />
         <item itemvalue="TestNG.TodoAppTest" />

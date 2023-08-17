@@ -1,9 +1,11 @@
 package org.tests;
+import org.testng.annotations.Listeners;
+import org.utils.CustomTestListener;
 import org.utils.TaskDataProvider;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-
+@Listeners(CustomTestListener.class)
 public class TodoAppTest extends BaseTests{
 
     @Test (dataProvider = "TaskData",dataProviderClass = TaskDataProvider.class)
